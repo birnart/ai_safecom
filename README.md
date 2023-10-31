@@ -1,4 +1,5 @@
-Project 4: SafeComm Digital Security Solutions
+# Project 4: SafeComm Digital Security Solutions
+
 Welcome to SafeComm Digital Security Solutions! In the modern digital age, people across the globe
 communicate largely through text messages. SMSs have become an integral part of our daily lives.
 However, with this ease of communication, there comes a dark side: SMS-based fraud. Unsuspecting
@@ -8,12 +9,15 @@ data. This dataset comprises a mix of regular day-to-day messages and some poten
 ones. The objective is to design a mechanism that identifies and flags these fraudulent messages
 automatically. This way, we can warn users or even prevent these messages from being delivered
 altogether.
-Dataset features
+
+
+## Dataset features
 • Fraudulent: Binary indicator if the SMS is fraudulent (1 for Yes, 0 for No)
 • SMS Text: The content of the SMS
 • ID: A unique identifier for each SMS
 • Date and Time: Timestamp indicating when the SMS was sent
-Assignment
+
+## Assignment
 • Perform an Explanatory data analysis (EDA) with visualization using the entire dataset..
 • Preprocess the dataset (impute missing values, encode categorical features with one-hot
 encoding). Your goal is to estimate whether an SMS is fraudulent
