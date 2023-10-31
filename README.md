@@ -13,8 +13,11 @@ altogether.
 
 ## Dataset features
 • Fraudulent: Binary indicator if the SMS is fraudulent (1 for Yes, 0 for No)
+
 • SMS Text: The content of the SMS
+
 • ID: A unique identifier for each SMS
+
 • Date and Time: Timestamp indicating when the SMS was sent
 
 ## Assignment
