@@ -1,4 +1,4 @@
-# Project 4: SafeComm Digital Security Solutions
+# Project 4: SafeComm Digital Security Solutions (Uni Project)
 
 Welcome to SafeComm Digital Security Solutions! In the modern digital age, people across the globe
 communicate largely through text messages. SMSs have become an integral part of our daily lives.
