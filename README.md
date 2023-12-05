@@ -32,6 +32,7 @@ First we worked with our text, we imported typical stopwords and removed them, r
 Then we used two different text to values converter, Term Frequency - Inverse Document Frequency and Bag of Words (which we will call TF-IDF and BoW from this point onwards). 
 
 
+
 ## Section 3
 Some of the algorithms listed require or greatly benefit with normalized or standarized data, the TF-IDF output is already normalized but the BoW is not, this is why we differenciate the normalized BoW data and the not normalized BoW natural output. 
 
@@ -43,19 +44,19 @@ We will then tune the hyperparameters using cross-validation to find the best on
         • max_iter: Some of the models we use have this hyperparameter, this parameter determines the maximun number of iterations the model will do before finishing the execution. 
 
     Logistic Regression:
-        •  penalty: this hyperparameter specifies the norm of the penalty. 
+        •  penalty: this hyperparameter specifies the norm of the penalty which is used to prevent overfitting by adding a penalty term for complex models.
         •  C: Inverse of regularization strenght, the smaller the float, the stronger the regularization. 
 
     Linear SVM with stochastic gradient descent training:
-        • loss: the loss function to be used. 
-        • learning_rate: the learning rate to apply to the SGD.
+        • loss: the loss function to be used which quantifies the difference between the predicted values and the true labels, the goal of training is to minimize this loss
+        • learning_rate: the learning rate to apply to the SGD which controls the size of the steps taken during each iteration of the optimization process. It determines how much the model's parameters are adjusted based on the gradient of the loss function with respect to those parameters.
 
     Kernel SVM:
-        • kernel: this hyperparameter specifies the kernel type to be used in the algorithm.
-        • gamma: kernel coefficient for the method we decide on kernel.
+        • kernel: this hyperparameter specifies the type of kernel function to be used in the algorithm. It transforms the input data into a higher-dimensional space and therefore it allows the algorithm to find nonlinear decision boundaries in the input space.
+        • gamma: kernel coefficient for the method we decide on kernel. It influences the shape of the decision boundary and the influence of individual training samples.
 
     Multinomial Naive Bayes:
-        • alpha: additive smoothing parameter
+        • alpha: additive smoothing parameter, it is used to handle the issue of zero probabilities for certain features in the training data.
 
     Artificial Neural Network:
         •
