@@ -46,28 +46,27 @@ We will then tune the hyperparameters using cross-validation to find the best on
         •  penalty: this hyperparameter specifies the norm of the penalty. 
         •  C: Inverse of regularization strenght, the smaller the float, the stronger the regularization. 
 
-    Linear SVM:
-        • loss: 
-        • learning_rate
-        • max_iter
+    Linear SVM with stochastic gradient descent training:
+        • loss: the loss function to be used. 
+        • learning_rate: the learning rate to apply to the SGD.
 
     Kernel SVM:
-        • kernel
-        • gamma
-        • max_iter
+        • kernel: this hyperparameter specifies the kernel type to be used in the algorithm.
+        • gamma: kernel coefficient for the method we decide on kernel.
 
     Multinomial Naive Bayes:
-        • alpha
+        • alpha: additive smoothing parameter
 
     Artificial Neural Network:
+        •
+        •
 
 
 
+Both for evaluating our models and for deciding the best hyperparameters we use *f1* scoring because we have an unbalanced dataset and the accuracy may mislead us due to the dominance of one class (in our case the Non Fraudulent sms). 
+Furthermore, we want to minimize False Positives because we don't want to accidentally flag a non fraudulent sms as spam. 
 
-
-Then we will redo the whole process of running the models but with the best hyperaparameters found.
-
-Both for evaluating our models and for deciding the best hyperparameters we use *f1* scoring because we have an unbalanced dataset and the accuracy doesn't account for the difference. Furthermore, we want to minimize False Positives because we don't want to accidentally flag a non fraudulent sms as spam. 
+For testing, we will redo the whole process of training and running the models but with the best hyperaparameters found.
 
 
 ## Section 4: results (not done yet)
