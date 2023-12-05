@@ -59,8 +59,12 @@ We will then tune the hyperparameters using cross-validation to find the best on
         • alpha: additive smoothing parameter, it is used to handle the issue of zero probabilities for certain features in the training data.
 
     Artificial Neural Network:
-        •
-        •
+        • kernel initializer:specifies the method used to initialize the weights of the neural network layers.
+        • activation functinos: mathematical operations applied to the output of each neuron. They introduce non-linearity to the network, allowing it to learn complex relationships and patterns in the data
+        • optimizer:defines the specific optimization algorithm used to update the weights during the training process
+        • loss: the loss function to be used which quantifies the difference between the predicted values and the true labels, the goal of training is to minimize this loss
+        • epochs: by the 5th epoch whe can see that the change is the loss is not large so it is sufficient and the accuracy is way higer so we could be doing overfitting
+        
 
 
 
