@@ -60,49 +60,37 @@ We will then tune the hyperparameters using cross-validation to find the best on
 
     Artificial Neural Network:
         • kernel initializer:specifies the method used to initialize the weights of the neural network layers.
-        • activation functinos: mathematical operations applied to the output of each neuron. They introduce non-linearity to the network, allowing it to learn complex relationships and patterns in the data
-        • optimizer:defines the specific optimization algorithm used to update the weights during the training process
+        • activation functions: mathematical operations applied to the output of each neuron. They introduce non-linearity to the network, allowing it to learn complex relationships and patterns in the data
+        • optimizer: defines the specific optimization algorithm used to update the weights during the training process
         • loss: the loss function to be used which quantifies the difference between the predicted values and the true labels, the goal of training is to minimize this loss
         • epochs: by the 5th epoch whe can see that the change is the loss is not large so it is sufficient and the accuracy is way higer so we could be doing overfitting
         
 
 
 
-Both for evaluating our models and for deciding the best hyperparameters we use *f1* scoring because we have an unbalanced dataset and the accuracy may mislead us due to the dominance of one class (in our case the Non Fraudulent sms). 
+Both for evaluating our models and for deciding the best hyperparameters we use *f1* scoring because we have an unbalanced dataset as can be seen in the visualization and the accuracy may mislead us due to the dominance of one class (in our case the Non Fraudulent sms). 
 Furthermore, we want to minimize False Positives because we don't want to accidentally flag a non fraudulent sms as spam. 
 
 For testing, we will redo the whole process of training and running the models but with the best hyperaparameters found.
 
 
-## Section 4: results (not done yet)
-• Main finding(s): report your final results and what you might conclude
-from your work
-• Include at least one placeholder figure and/or table for communicating
-your findings
+## Section 4:  
+
+Finally, we conclude our experimentation after executing the models with these confusion matrixes. As we tuned our hyperparameters maximizing the f1 score, some results may seem worse but actually make the f1 grow in comparison to the default models. 
+
+These are the confusion matrices of the default or non specific hyperparameters models:
+
+
+
+These are the confusion matrices of the hyperparameter tuned models:
+
+
+
+
 
 ## Section 5: 
 
-One paragraph conclusion
+After considering multiple models, training them and tuning their hyperparameters, we conclude that the tuned Kernel SVM is the best architecture to implement for our problem. It has high recall and low false positives as can be seen on the second image on section 4 and more importantly, the highest F1 score out of all the models we tried during our experimentation. 
 
-Even though we tuned with high details our models and compared the best performance of each, we still could have created an even more powerfull classifier by chaining them and creating a meta-classifier. The next step for this direction of future work will be to implement it and tune to compare if a composition of classifiers is better than single models. 
-
-
-
-## Assignment
-• Perform an Explanatory data analysis (EDA) with visualization using the entire dataset..
-
-• Preprocess the dataset (impute missing values, encode categorical features with one-hot
-encoding). Your goal is to estimate whether an SMS is fraudulent
-
-• Define whether this is a regression, classification or clustering problem, explain why and
-choose your model design accordingly. Test at least 3 different models. First, create a
-validation set from the training set to analyze the behaviour with the default
-hyperparameters. Then use cross-validation to find the best set of hyperparameters. You
-must describe every hyperparameter tuned (the more, the better)
-
-• Select the best architecture using the right metric
-
-• Compute the performances of the test set
-
-• Explain your results
+Even though we tuned with high details our models and compared the best performance of each, we still could have created an even more powerfull classifier by chaining them and creating an ensemble of classifiers that combine the best qualities and predictions of our models. The next step for this direction of future work will be to implement it and tune to compare if a composition of classifiers is better than single models. 
 
